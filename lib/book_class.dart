@@ -6,48 +6,47 @@
 
 
 
-class Book{
-  // static property
-  static int totalBooks=0;
+class Book {
 
-  // class properties
+  // static property
+  static int totalBooks = 0;
+
+  //properties
   String? title;
   String? author;
   int? publicationYear;
-  int pagesRead =0;
+  int pagesRead = 0;
 
-  // constructor
-  Book ({ this.title, this.author,this.publicationYear}){
-    totalBooks ++;
+  //constructor
+  Book({this.title, this.author, this.publicationYear, this.pagesRead = 0}) {
+    totalBooks++;
   }
 
-  // method
-
-  void read(int pages){
-    if(pages>0){
-      pagesRead +=pages;
-    }
+  // all method
+  void read(int pages) {
+    pagesRead += pages;
   }
 
- int getPagesRead(){
+  int getPagesRead() {
     return pagesRead;
   }
 
- String getTitle(){
+  String getTitle() {
     return title!;
   }
 
- String getAuthor(){
+  String getAuthor() {
     return author!;
   }
 
- int getPublicationYear(){
+  int getBookAge() {
+    return DateTime.now().year - publicationYear!;
+  }
+
+  int getPublicationYear() {
     return publicationYear!;
   }
 
-int  getBookAge(){
-  return DateTime.now().year - publicationYear!;
-  }
 }
 
 
