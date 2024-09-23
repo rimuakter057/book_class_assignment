@@ -16,8 +16,17 @@ class Book{
   int? publicationYear;
   int pagesRead =0;
 
+  // constructor
+  Book ({ this.title, this.author,this.publicationYear}){
+    totalBooks ++;
+  }
+
+  // method
+
   void read(int pages){
-    pagesRead +=pages;
+    if(pages>0){
+      pagesRead +=pages;
+    }
   }
 
  int getPagesRead(){
@@ -38,10 +47,6 @@ class Book{
 
 int  getBookAge(){
   return DateTime.now().year - publicationYear!;
-  }
-
-  Book({this.title, this.author, this.publicationYear, this.pagesRead = 0}) {
-    totalBooks++;
   }
 }
 
