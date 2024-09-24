@@ -31,7 +31,7 @@ void main() {
 
   print(
       "BookThree title: ${bookThree.title} \n BookThree author: ${bookThree.getAuthor()} \n"
-          "BookThree publication year: ${bookThree.getTitle()} \n BookThree author: ${bookThree.getAuthor()} \n"
+          "BookThree publication year: ${bookThree.publicationYear!} \n "
           "BookThree pages read: ${bookThree.getPagesRead()} \n BookThree age: ${bookThree.getBookAge()}  ");
 
   print(Book.totalBooks);
