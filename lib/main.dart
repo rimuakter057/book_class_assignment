@@ -23,16 +23,14 @@ void main() {
       "BookOne title: ${bookOne.getTitle()} \n BookOne author: ${bookOne.author} \n"
       "BookOne publication year: ${bookOne.getPublicationYear()} \n "
       "BookOne pages read: ${bookOne.getPagesRead()} \n BookOne age: ${bookOne.getBookAge()}");
-
   print(
       "BookTwo title: ${bookTwo.getTitle()} \n BookTwo author: ${bookTwo.author} \n"
       "BookTwo publication year: ${bookTwo.publicationYear} \n "
       "BookTwo pages read: ${bookTwo.getPagesRead()} \n BookTwo age: ${bookTwo.getBookAge()} ");
-
   print(
       "BookThree title: ${bookThree.title} \n BookThree author: ${bookThree.getAuthor()} \n"
           "BookThree publication year: ${bookThree.publicationYear!} \n "
           "BookThree pages read: ${bookThree.getPagesRead()} \n BookThree age: ${bookThree.getBookAge()}  ");
 
-  print(Book.totalBooks);
+  print("Total book ${ Book.totalBooks }");
 }
