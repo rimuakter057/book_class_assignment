@@ -3,16 +3,21 @@ import 'book_class.dart';
 void main() {
   Book bookOne = Book(title: " Pride and Prejudice",
       author: "Jane Austen",
-      publicationYear: 1813);
+      publicationYear: 1813,
+       pagesRead: 400
+  );
 
   Book bookTwo = Book(title: 'Sesher Kobita ',
       author: ' Rabindranath Tagore',
-      publicationYear:1929);
+      publicationYear:1929,
+      pagesRead:200
+  );
 
   Book bookThree = Book(
     title: 'To Kill a Mockingbird',
     author: 'Harper Lee',
     publicationYear: 1960,
+      pagesRead:250
   );
 
   bookOne.read(100);
